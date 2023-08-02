@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col col-xs-5">
+      <app-items-list [inventory]="inventory" (onSelectedItem)="receiveSelectedItem($event)">
+
+      </app-items-list>
+    </div>
+    <div class="col col-xs-5">
+      <app-cart [cartItems]="receivedItems"></app-cart>
+    </div>
+  </div>
+</div>
+
